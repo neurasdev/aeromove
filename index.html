@@ -57,8 +57,16 @@
     .card { padding: 18px; }
     .card h3 { margin: 0 0 8px; font-size: 18px; }
     .card p { margin: 0; color: var(--muted); line-height: 1.6; font-size: 15px; }
-    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin-top: 18px; }
-    .shot { padding: 12px; }
+
+    .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    }
+    .shot {
+    padding: 20px;
+    }    
+    
     .shot img { width: 100%; height: auto; display: block; border-radius: 12px; background: black; }
     .shot-label { font-size: 13px; color: var(--muted); margin-top: 10px; text-align: center; }
     .support-box { padding: 20px; margin-top: 16px; }
@@ -157,7 +165,7 @@
       <div class="support-box">
         <p>
           Questions, feedback, or App Store support requests:
-          <a href="mailto:support@aeromove.app">support@aeromove.app</a>
+          <a href="mailto:neuras.dev@gmail.com">support@aeromove.app</a>
         </p>
       </div>
     </section>
