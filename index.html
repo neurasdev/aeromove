@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AeroMove — Large File Transfer</title>
+  <meta name="description" content="Reliable large file transfer between iPhone and Mac." />
+  <style>
+    :root {
+      --bg: #0b1020;
+      --bg2: #121933;
+      --card: rgba(255,255,255,0.06);
+      --text: #eef2ff;
+      --muted: #b7c0e0;
+      --accent: #6ea8ff;
+      --accent2: #9c7bff;
+      --line: rgba(255,255,255,0.10);
+      --shadow: 0 18px 40px rgba(0,0,0,0.28);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", Helvetica, Arial, sans-serif;
+      background: linear-gradient(180deg, var(--bg) 0%, #111936 100%);
+      color: var(--text);
+    }
+    a { color: #a9c8ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { max-width: 1120px; margin: 0 auto; padding: 28px 20px 70px; }
+    .topbar { display: flex; align-items: center; gap: 14px; margin-bottom: 30px; }
+    .topbar img { width: 54px; height: 54px; border-radius: 14px; box-shadow: var(--shadow); background: white; }
+    .brand { font-size: 24px; font-weight: 700; letter-spacing: -0.02em; }
+    .hero { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 28px; align-items: center; margin-bottom: 38px; }
+    .badge {
+      display: inline-block; padding: 8px 12px; border: 1px solid var(--line);
+      border-radius: 999px; color: var(--muted); font-size: 14px; margin-bottom: 16px;
+      background: rgba(255,255,255,0.04);
+    }
+    h1 { font-size: clamp(34px, 6vw, 58px); line-height: 1.02; margin: 0 0 14px; letter-spacing: -0.03em; }
+    .lead { font-size: 19px; line-height: 1.65; color: var(--muted); max-width: 700px; margin: 0 0 22px; }
+    .cta { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 10px; }
+    .btn {
+      display: inline-block; padding: 13px 18px; border-radius: 12px; text-decoration: none;
+      font-weight: 600; border: 1px solid transparent;
+    }
+    .btn-primary { background: linear-gradient(90deg, var(--accent), var(--accent2)); color: white; box-shadow: var(--shadow); }
+    .btn-secondary { border-color: var(--line); color: var(--text); background: rgba(255,255,255,0.04); }
+    .hero-card, .card, .shot, .support-box {
+      background: var(--card); border: 1px solid var(--line); border-radius: 20px; box-shadow: var(--shadow);
+    }
+    .hero-card { padding: 22px; }
+    .hero-card video { width: 100%; border-radius: 16px; display: block; background: black; }
+    .section { margin-top: 34px; }
+    .section h2 { font-size: 30px; margin: 0 0 12px; letter-spacing: -0.02em; }
+    .section p { color: var(--muted); line-height: 1.7; font-size: 16px; margin-top: 0; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-top: 16px; }
+    .card { padding: 18px; }
+    .card h3 { margin: 0 0 8px; font-size: 18px; }
+    .card p { margin: 0; color: var(--muted); line-height: 1.6; font-size: 15px; }
+    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin-top: 18px; }
+    .shot { padding: 12px; }
+    .shot img { width: 100%; height: auto; display: block; border-radius: 12px; background: black; }
+    .shot-label { font-size: 13px; color: var(--muted); margin-top: 10px; text-align: center; }
+    .support-box { padding: 20px; margin-top: 16px; }
+    .footer { margin-top: 46px; padding-top: 22px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+    @media (max-width: 900px) { .hero { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <img src="icon_1024.png" alt="AeroMove logo" />
+      <div class="brand">AeroMove</div>
+    </div>
+
+    <section class="hero">
+      <div>
+        <div class="badge">AeroMove for iPhone and Mac</div>
+        <h1>Reliable large file transfer over the air.</h1>
+        <p class="lead">
+          AeroMove helps you move large batches of photos and videos between iPhone and Mac with visibility, control, and peace of mind.
+        </p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#preview">Watch Preview</a>
+          <a class="btn btn-secondary" href="#screenshots">View Screenshots</a>
+          <a class="btn btn-secondary" href="privacy.html">Privacy Policy</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <video controls playsinline preload="metadata" poster="shot01.png">
+          <source src="aeromove_preview_appstore.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Why AeroMove</h2>
+      <p>
+        AeroMove is built for people who want a dependable way to move large amounts of media between iPhone and Mac. It gives you visibility before starting, clear progress during transfer, and a smooth path for backing up photo and video libraries over your local network.
+      </p>
+      <div class="grid">
+        <div class="card">
+          <h3>Built for large transfers</h3>
+          <p>Select many photos and videos at once and let long transfers run reliably.</p>
+        </div>
+        <div class="card">
+          <h3>See time estimates early</h3>
+          <p>View export time and transfer time before starting, so you know what to expect.</p>
+        </div>
+        <div class="card">
+          <h3>Smart storage protection</h3>
+          <p>Avoid failed transfers when iPhone storage is low by checking available sending-side space during selection.</p>
+        </div>
+        <div class="card">
+          <h3>Perfect for backup</h3>
+          <p>Great for backing up your iPhone photo and video library to your MacBook over your local network.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="preview">
+      <h2>App Preview</h2>
+      <p>
+        Watch AeroMove in action across iPhone and Mac. The preview highlights large batch selection, transfer estimates, progress visibility, and instant arrival on your Mac.
+      </p>
+      <div class="hero-card">
+        <video controls playsinline preload="metadata" poster="shot01.png">
+          <source src="aeromove_preview_appstore.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+
+    <section class="section" id="screenshots">
+      <h2>Screenshots</h2>
+      <p>
+        A closer look at AeroMove on iPhone and Mac, including selection-time estimates, transfer progress, receiving workflow, and local file arrival.
+      </p>
+      <div class="gallery">
+        <div class="shot"><img src="shot01.png" alt="AeroMove screenshot 1"><div class="shot-label">Screenshot 1</div></div>
+        <div class="shot"><img src="shot02.png" alt="AeroMove screenshot 2"><div class="shot-label">Screenshot 2</div></div>
+        <div class="shot"><img src="shot03.png" alt="AeroMove screenshot 3"><div class="shot-label">Screenshot 3</div></div>
+        <div class="shot"><img src="shot04.png" alt="AeroMove screenshot 4"><div class="shot-label">Screenshot 4</div></div>
+        <div class="shot"><img src="shot05.png" alt="AeroMove screenshot 5"><div class="shot-label">Screenshot 5</div></div>
+        <div class="shot"><img src="shot06.png" alt="AeroMove screenshot 6"><div class="shot-label">Screenshot 6</div></div>
+        <div class="shot"><img src="shot07.png" alt="AeroMove screenshot 7"><div class="shot-label">Screenshot 7</div></div>
+        <div class="shot"><img src="shot08.png" alt="AeroMove screenshot 8"><div class="shot-label">Screenshot 8</div></div>
+        <div class="shot"><img src="shot09.png" alt="AeroMove screenshot 9"><div class="shot-label">Screenshot 9</div></div>
+        <div class="shot"><img src="shot10.png" alt="AeroMove screenshot 10"><div class="shot-label">Screenshot 10</div></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Support</h2>
+      <div class="support-box">
+        <p>
+          Questions, feedback, or App Store support requests:
+          <a href="mailto:support@aeromove.app">support@aeromove.app</a>
+        </p>
+      </div>
+    </section>
+
+    <div class="footer">
+      © 2026 AeroMove · <a href="privacy.html">Privacy Policy</a>
+    </div>
+  </div>
+</body>
+</html>
